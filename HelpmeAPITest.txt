@@ -1,0 +1,57 @@
+1) Regarding API Booking Test project -
+
+##Created Maven project and added all dependencies in pom.xml required to run the project. Below Added new libraries with detailed description
+##To run test-cases -> Run testNG.xml file
+	*Added 7 test cases for 3 APIs including Positive and some Negative cases mentioned in requirement
+    *Test Data read from DataProviderFile
+    *Adding Assertions for test cases verification
+
+# Created testNG Project -
+
+    <dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>6.9.10</version>
+    <scope>compile</scope>
+</dependency>
+
+**Advantages - 
+	* Provides DataProvider so that run test cases with different inputs. Reading test data from separate file.
+	* Provides Reporting so that we can sent to stakeholders
+
+# Create TestConstants file - Storing URL and constants file. All constant data can be configured here.
+# Create TestHelper file - Where test data setup and reusable functions added.
+# Adding Javadocs to know what test case does
+ 
+# Rest Assured library
+
+<dependency>
+         <groupId>io.rest-assured</groupId>
+         <artifactId>rest-assured</artifactId>
+         <version>3.0.0</version>
+         <scope>test</scope>
+</dependency>
+
+**Advantages - 
+	* Library to hit APIs using Behaviour Driven Framework
+	
+
+# Lombok library
+
+<dependency>
+         <groupId>org.projectlombok</groupId>
+         <artifactId>lombok</artifactId>
+         <version>1.18.4</version>
+</dependency>
+
+**To generate getter/setters and to strig method for classes
+
+# To run from Jenkins, ned these plugins
+
+maven-compiler-plugin
+Maven-surefire-plugin
+
+
+#### Know to extend this project to Jenkins so that we can run from Jenkins
+
+
